@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect, JsonResponse
 from django.urls import reverse_lazy
 
 from django.contrib.auth.mixins import LoginRequiredMixin,\
-     PermissionRequiredMixin
+    PermissionRequiredMixin
 from django.views import generic
 
 from .models import Idioma,Frase
