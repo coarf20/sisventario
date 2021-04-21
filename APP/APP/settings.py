@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bases',
     'inv',
     'django_userforeignkey',
+    'cmp',
 ]
 
 MIDDLEWARE = [
