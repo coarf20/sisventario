@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'inv',
     'django_userforeignkey',
     'cmp',
+    'fac',
 ]
 
 MIDDLEWARE = [
