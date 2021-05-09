@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="{% static 'base/css/recibo.css' %}">
     <style type="text/css">
         @page {
-             width: 58mm; 
+            width: 58mm; 
             size: auto;   
             margin: 0mm;
             }
     </style>
 </head>
 <body onload="window.print();window.close()" class="receipt">
+
+    
+
     <div class="col-md-1 col-sm-1 col-xs-1 col-xl-1">
         <center>
-            <b class="text-center">Tienda UDEMY DEBSCONSULTORES</b><br> 
+            <b class="text-center">Empresa RDR-INTEL</b><br> 
             <small>Direccion</small><br>
             <small>FACTURA No. {{enc.factura}}</small><br>
         </center>

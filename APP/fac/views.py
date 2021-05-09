@@ -136,17 +136,6 @@ def facturas(request,id=None):
     
     if request.method == "GET":
         enc = FacturaEnc.objects.filter(pk=id).first()
-        if id:
-            if not enc:
-                messages.error(request,'Factura No Existe')
-                return redirect("fac:factura_list")
-
-            usr = request.user
-            if not usr.is_superuser:
-                if enc.uc != usr:
-                    messages.error(request,'Factura no fue creada por usuario')
-                    return redirect("fac:factura_list")
-
         if not enc:
             encabezado = {
                 'id':0,
