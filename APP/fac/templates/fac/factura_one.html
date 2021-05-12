@@ -35,21 +35,21 @@
         <table class="table table-condensed table-sm" width="60%">
             <thead>
                 <th>Código</th>
-                <th  align='right'>Cant.</th>
-                <th  align='right'>P. Unit.</th>
-                <th  align='right'>Sub Total</th>
-                <th  align='right'>Descuento</th>
-                <th  align='right'>Total</th>
+                <th  align='center'>Cant.</th>
+                <th  align='center'>P. Unit.</th>
+                <th  align='center'>Sub Total</th>
+                <th  align='center'>Descuento</th>
+                <th  align='center'>Total</th>
             </thead>
             <tbody>
                 {% for obj in detalle %}
                 <tr>
-                    <td>{{obj.producto.id}}</td>
-                    <td>{{obj.cantidad}}</td>
-                    <td>{{obj.precio}}</td>
-                    <td>{{obj.sub_total}}</td>
-                    <td>{{obj.descuento}}</td>
-                    <td>{{obj.total}}</td>
+                    <td align='center'>{{obj.producto.id}}</td>
+                    <td align='center'>{{obj.cantidad}}</td>
+                    <td align='center'>{{obj.precio}}</td>
+                    <td align='center'>{{obj.sub_total}}</td>
+                    <td align='center'>{{obj.descuento}}</td>
+                    <td align='center'>{{obj.total}}</td>
                 </tr>
                 <tr>
                     <td colspan="5">{{obj.producto}}</td>
@@ -84,7 +84,7 @@
             <center>
                 Creada por:  {{enc.uc}} - Fecha:  {{enc.fc}}
                 <br>
-                <i>&copy; &reg; <b>Daniel Bojorge y/o DEBS Consultores</b><br> - debsconsultores@gmail.com</i> 
+                <i>&copy; &reg; <b>GERENTE: RUBEN DARIO RODRIGUEZ</b><br> - Intelrdr@hotmail.com</i> 
             </center>
         </small>
         </div>
